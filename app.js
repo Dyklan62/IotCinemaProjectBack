@@ -4,12 +4,10 @@ const mqtt = require('mqtt');
 const app = express();
 
 //Conf connexion MQTT
-// const mqttBroker = 'wss://631c748724bc4a78bf14eddc2f2133a9.s2.eu.hivemq.cloud:8884/mqtt';
-// const username= 'maciej';
-// const password = 'Pgb2p2A8S9hUf8';
-const mqttBroker = 'wss://31c1474781644cc99b02813714a2f9e6.s2.eu.hivemq.cloud:8884/mqtt';
-const username = 'Maciej';
-const password = 'toto123456';
+const mqttBroker = 'wss://631c748724bc4a78bf14eddc2f2133a9.s2.eu.hivemq.cloud:8884/mqtt';
+const username= 'maciej';
+const password = 'Pgb2p2A8S9hUf8';
+
 const mqttClient = mqtt.connect(mqttBroker, { username: username, password: password });
 const peopleChannel = 'PEOPLE';
 const tempChannel = 'TEMP';
